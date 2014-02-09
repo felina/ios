@@ -65,10 +65,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Collection View Controller - Item-->
+        <!--Photos Collection View Controller - Photos-->
         <scene sceneID="SQv-yV-D0S">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="Ht0-bO-YET" sceneMemberID="viewController">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="Ht0-bO-YET" customClass="FEPhotosCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="mGm-yQ-Rkr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="81Y-ff-qRI">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="81Y-ff-qRI">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -94,14 +94,14 @@
                             <outlet property="delegate" destination="Ht0-bO-YET" id="TsN-yg-lbH"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="b98-xd-D27"/>
+                    <tabBarItem key="tabBarItem" title="Photos" image="Photos.png" id="b98-xd-D27"/>
                     <navigationItem key="navigationItem" id="5y4-U1-Dzq"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyB-aK-kKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179" y="-245"/>
+            <point key="canvasLocation" x="1149" y="33"/>
         </scene>
-        <!--View Controller - Item 1-->
+        <!--View Controller - Feed-->
         <scene sceneID="KS6-ue-gMG">
             <objects>
                 <viewController id="Gxy-DB-dAw" sceneMemberID="viewController">
@@ -114,13 +114,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="H2j-CC-uYM"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="Network_Closed.png" id="H2j-CC-uYM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2y-ab-Hd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1419" y="313"/>
+            <point key="canvasLocation" x="1065" y="319"/>
         </scene>
-        <!--View Controller - Item 2-->
+        <!--View Controller - Profile-->
         <scene sceneID="enV-hV-WYr">
             <objects>
                 <viewController id="qmh-E1-hb2" sceneMemberID="viewController">
@@ -133,11 +133,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Dzf-H1-jZc"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Contact.png" id="Dzf-H1-jZc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JTf-w1-wvn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1195" y="677"/>
+            <point key="canvasLocation" x="955" y="437"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="G75-x5-gvW">
@@ -150,16 +150,21 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Ht0-bO-YET" kind="relationship" relationship="viewControllers" id="5Lb-YF-8pH"/>
+                        <segue destination="Ht0-bO-YET" kind="relationship" relationship="viewControllers" id="j6k-BI-a2P"/>
                         <segue destination="Gxy-DB-dAw" kind="relationship" relationship="viewControllers" id="QjF-Py-Ih1"/>
                         <segue destination="qmh-E1-hb2" kind="relationship" relationship="viewControllers" id="8nm-Iu-qem"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ln5-Ie-MwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719" y="257"/>
+            <point key="canvasLocation" x="485" y="33"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Contact.png" width="25" height="25"/>
+        <image name="Network_Closed.png" width="25" height="23"/>
+        <image name="Photos.png" width="27" height="22"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
