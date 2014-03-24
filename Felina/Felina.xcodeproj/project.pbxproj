@@ -25,8 +25,10 @@
 		663BBB0F18A6F7FF00BD10A4 /* Photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 663BBB0E18A6F7FF00BD10A4 /* Photos@2x.png */; };
 		663BBB1218A6F83D00BD10A4 /* Contact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 663BBB1118A6F83D00BD10A4 /* Contact@2x.png */; };
 		663BBB1418A6F87D00BD10A4 /* Network_Closed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 663BBB1318A6F87D00BD10A4 /* Network_Closed@2x.png */; };
-		66B4A51A18A7EDB9003986F8 /* FEPhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B4A51918A7EDB9003986F8 /* FEPhotosCollectionViewController.m */; };
 		66B4A51F18A7F122003986F8 /* flack.png in Resources */ = {isa = PBXBuildFile; fileRef = 66B4A51E18A7F122003986F8 /* flack.png */; };
+		66B4A52518A80488003986F8 /* Instagram@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66B4A52418A80488003986F8 /* Instagram@2x.png */; };
+		66B4A52718A805F7003986F8 /* Layers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66B4A52618A805F7003986F8 /* Layers@2x.png */; };
+		66B4A52A18A82BA6003986F8 /* FECustomImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B4A52918A82BA6003986F8 /* FECustomImagePickerViewController.m */; };
 		93FC7CA8847B491E891ECA1D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E134BBD3E08A4C5B81E7FC7A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,9 +66,11 @@
 		663BBB0E18A6F7FF00BD10A4 /* Photos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Photos@2x.png"; sourceTree = "<group>"; };
 		663BBB1118A6F83D00BD10A4 /* Contact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact@2x.png"; sourceTree = "<group>"; };
 		663BBB1318A6F87D00BD10A4 /* Network_Closed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Network_Closed@2x.png"; sourceTree = "<group>"; };
-		66B4A51818A7EDB9003986F8 /* FEPhotosCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEPhotosCollectionViewController.h; sourceTree = "<group>"; };
-		66B4A51918A7EDB9003986F8 /* FEPhotosCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEPhotosCollectionViewController.m; sourceTree = "<group>"; };
 		66B4A51E18A7F122003986F8 /* flack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flack.png; sourceTree = "<group>"; };
+		66B4A52418A80488003986F8 /* Instagram@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instagram@2x.png"; sourceTree = "<group>"; };
+		66B4A52618A805F7003986F8 /* Layers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layers@2x.png"; sourceTree = "<group>"; };
+		66B4A52818A82BA6003986F8 /* FECustomImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FECustomImagePickerViewController.h; path = ../FECustomImagePickerViewController.h; sourceTree = "<group>"; };
+		66B4A52918A82BA6003986F8 /* FECustomImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FECustomImagePickerViewController.m; path = ../FECustomImagePickerViewController.m; sourceTree = "<group>"; };
 		881016FAA49248BDA9508F93 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E134BBD3E08A4C5B81E7FC7A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -137,8 +141,8 @@
 				66278B6318A67C2A0056B165 /* Main_iPad.storyboard */,
 				66278B6618A67C2A0056B165 /* FEViewController.h */,
 				66278B6718A67C2A0056B165 /* FEViewController.m */,
-				66B4A51818A7EDB9003986F8 /* FEPhotosCollectionViewController.h */,
-				66B4A51918A7EDB9003986F8 /* FEPhotosCollectionViewController.m */,
+				66B4A52818A82BA6003986F8 /* FECustomImagePickerViewController.h */,
+				66B4A52918A82BA6003986F8 /* FECustomImagePickerViewController.m */,
 				66278B6918A67C2A0056B165 /* Images.xcassets */,
 				66278B5518A67C2A0056B165 /* Supporting Files */,
 			);
@@ -179,6 +183,8 @@
 		663BBB1018A6F80600BD10A4 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				66B4A52618A805F7003986F8 /* Layers@2x.png */,
+				66B4A52418A80488003986F8 /* Instagram@2x.png */,
 				663BBB1318A6F87D00BD10A4 /* Network_Closed@2x.png */,
 				663BBB1118A6F83D00BD10A4 /* Contact@2x.png */,
 				663BBB0E18A6F7FF00BD10A4 /* Photos@2x.png */,
@@ -275,6 +281,8 @@
 			files = (
 				663BBB0F18A6F7FF00BD10A4 /* Photos@2x.png in Resources */,
 				66278B6518A67C2A0056B165 /* Main_iPad.storyboard in Resources */,
+				66B4A52718A805F7003986F8 /* Layers@2x.png in Resources */,
+				66B4A52518A80488003986F8 /* Instagram@2x.png in Resources */,
 				66278B6A18A67C2A0056B165 /* Images.xcassets in Resources */,
 				663BBB1418A6F87D00BD10A4 /* Network_Closed@2x.png in Resources */,
 				66278B6218A67C2A0056B165 /* Main_iPhone.storyboard in Resources */,
@@ -332,7 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66B4A51A18A7EDB9003986F8 /* FEPhotosCollectionViewController.m in Sources */,
+				66B4A52A18A82BA6003986F8 /* FECustomImagePickerViewController.m in Sources */,
 				66278B5B18A67C2A0056B165 /* main.m in Sources */,
 				66278B5F18A67C2A0056B165 /* FEAppDelegate.m in Sources */,
 				66278B6818A67C2A0056B165 /* FEViewController.m in Sources */,
@@ -477,6 +485,7 @@
 				GCC_PREFIX_HEADER = "Felina/Felina-Prefix.pch";
 				INFOPLIST_FILE = "Felina/Felina-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -491,6 +500,7 @@
 				GCC_PREFIX_HEADER = "Felina/Felina-Prefix.pch";
 				INFOPLIST_FILE = "Felina/Felina-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -65,41 +65,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Photos Collection View Controller - Photos-->
-        <scene sceneID="SQv-yV-D0S">
+        <!--Image Picker View Controller - Photos-->
+        <scene sceneID="Qi4-4Z-BSL">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="Ht0-bO-YET" customClass="FEPhotosCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="mGm-yQ-Rkr">
+                <viewController id="ssx-N4-1KC" customClass="FEImagePickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xz8-ez-snT"/>
+                        <viewControllerLayoutGuide type="bottom" id="pHl-fL-mtZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9DW-fd-XT3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="06x-tB-hLK">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="81Y-ff-qRI">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="Ht0-bO-YET" id="OCe-Bh-eJf"/>
-                            <outlet property="delegate" destination="Ht0-bO-YET" id="TsN-yg-lbH"/>
-                        </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="Photos" image="Photos.png" id="b98-xd-D27"/>
-                    <navigationItem key="navigationItem" id="5y4-U1-Dzq"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dyB-aK-kKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KCT-Vb-Lgo">
+                                <rect key="frame" x="31" y="80" width="258" height="419"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe9-Nk-BVd">
+                                <rect key="frame" x="112" y="42" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Select Photos">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SelectImagePressed:" destination="ssx-N4-1KC" eventType="touchUpInside" id="xg0-jr-XpA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Photos" image="Photos.png" id="ODN-nP-Ltx"/>
+                    <connections>
+                        <outlet property="scrollView" destination="KCT-Vb-Lgo" id="HOF-WE-Rwd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Fc-gk-mtr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1149" y="33"/>
+            <point key="canvasLocation" x="1158" y="-274"/>
+        </scene>
+        <!--Custom Image Picker View Controller - Photos-->
+        <scene sceneID="eED-Zf-T2B">
+            <objects>
+                <viewController id="kAb-Cf-F8V" customClass="FECustomImagePickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ew0-Qt-bCP"/>
+                        <viewControllerLayoutGuide type="bottom" id="6P4-Zs-MLk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dsg-Ie-Xky">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dEm-Jn-pVO">
+                                <rect key="frame" x="25" y="59" width="271" height="440"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7B-Kc-UkQ">
+                                <rect key="frame" x="112" y="21" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Select Photos">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SelectImagePressed:" destination="ssx-N4-1KC" eventType="touchUpInside" id="h4e-Dz-v22"/>
+                                    <action selector="SelectPhotosPressed:" destination="kAb-Cf-F8V" eventType="touchUpInside" id="zEj-9R-eKh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Photos" image="Photos.png" id="Iw5-Xo-EBt"/>
+                    <connections>
+                        <outlet property="scrollView" destination="dEm-Jn-pVO" id="bVZ-a5-g58"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iIp-fe-WQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="-399"/>
         </scene>
         <!--View Controller - Feed-->
         <scene sceneID="KS6-ue-gMG">
@@ -150,7 +191,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Ht0-bO-YET" kind="relationship" relationship="viewControllers" id="j6k-BI-a2P"/>
+                        <segue destination="kAb-Cf-F8V" kind="relationship" relationship="viewControllers" id="Uwx-Ii-Mbu"/>
+                        <segue destination="ssx-N4-1KC" kind="relationship" relationship="viewControllers" id="bkt-dp-was"/>
                         <segue destination="Gxy-DB-dAw" kind="relationship" relationship="viewControllers" id="QjF-Py-Ih1"/>
                         <segue destination="qmh-E1-hb2" kind="relationship" relationship="viewControllers" id="8nm-Iu-qem"/>
                     </connections>
